@@ -1,0 +1,67 @@
+# Build files
+build*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.autosave
+*.user
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+
+# MOC/UIC/RCC generated files
+moc_*
+ui_*
+qrc_*
+
+# Qt Creator
+*.pro.user*
+*.qbs.user*
+*.qmlproject.user*
+*.creator.*
+*.autosave
+
+# CodeBlocks
+*.cbp
+*.depend
+*.layout
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Crash reports
+*.dmp
+
+# Logs
+*.log
+
+# Tags
+tags
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+
+# Others
+*.app
