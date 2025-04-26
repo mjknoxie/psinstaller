@@ -1,25 +1,35 @@
 # psinstaller-fork
 
-This is a fork of the `psinstaller` project originally developed by [PetaSAN](https://www.petasan.org/).
+Qt-based graphical installer for writing a SquashFS image to disk and executing setup scripts.
 
-`psinstaller` is a Qt-based graphical installer for deploying disk images and running installation scripts in a Linux environment.
+See [NOTICE](./NOTICE) for project history and upstream attribution.
+
+## Requirements
+
+- Qt 5 (QtWidgets, QtCore, QtGui)
+- C++ compiler (e.g., `g++`, `clang++`)
+
+## Build Instructions
+
+```bash
+cd app
+qmake
+make
+```
+
+This will produce the `psinstaller` binary inside the `app` directory.
+
+## Script Execution
+
+All install-time logic (e.g., disk preparation, image writing, configuration steps) is handled by shell scripts located in:
+
+```
+app/scripts/
+```
+
+These scripts are invoked by the Qt UI during installation. You may customize them to suit your deployment needs.
 
 ## License
 
-This project is licensed under the **GNU Affero General Public License v3.0 (AGPLv3)**.
-See the [LICENSE](./LICENSE) file for the full license text.
-
-The original upstream code did not include a `LICENSE` or `COPYING` file, but included AGPL license notices in the source file headers.
-For clarity and compliance, the full license text has been added to this repository.
-
-All original copyrights and license notices are preserved.
-
-## Modifications in This Fork
-
-- Project renamed to `psinstaller-fork`
-- Updated packaging and source structure
-
-## Credits
-
-Original Author: Maged Mokhtar / PetaSAN Project
-Fork Maintainer: Michael Knox / Breqwatr
+This project is licensed under the GNU Affero General Public License v3.0.  
+See [LICENSE](./LICENSE) for full terms.
