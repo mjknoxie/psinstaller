@@ -24,7 +24,7 @@
 #include "netsettings.h"
 
 
-#define SCRIPT_BASE "/root/scripts/"
+#define SCRIPT_BASE "/opt/installer/scripts/"
 #define SCRIPT_DETECT_DISKS SCRIPT_BASE "detect-disks.sh"
 #define SCRIPT_DETECT_IFS SCRIPT_BASE "detect-interfaces.sh"
 #define SCRIPT_DETECT_INSTALL_DEVICE SCRIPT_BASE "detect-install-device.sh"
@@ -46,7 +46,7 @@
 // upgrade scripts
 
 
-#define USCRIPT_BASE "/root/scripts/upgrade/"
+#define USCRIPT_BASE "/opt/installer/scripts/upgrade/"
 
 #define USCRIPT_DETECT_PREV_INSTALL_DISK USCRIPT_BASE "get_ps_disk.sh"
 #define USCRIPT_DETECT_PREV_INSTALL_VERSION USCRIPT_BASE "get_ps_version.sh"
